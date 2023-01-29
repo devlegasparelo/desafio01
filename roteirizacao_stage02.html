@@ -1,0 +1,254 @@
+<!--
+Como começar a construir um novo projeto utilizando html + CSS?
+
+    1. na area de trabalho, criar uma pasta com o nome do projeto, aqui vamos criar uma pasta com o nome PROJETO e arrastar para dentro do vs code
+
+    2. depois disso, vamos criar as pastas e arquivos dentro da pasta projeto
+
+    no vc code, já temos um atalho "emmet"
+uma boa pratica de html no vs code com o atalho exclamacao já traz uma serie de especificacoes para o nosso projeto
+DOCTYPE -> INSTRUCAO PARA DEFINIR O TIME DE HTML QUE VAMOS CONSTRUIR
+
+o atalho traz muitas tags para o nosso projeto
+
+a tag html é considerada a tag root ou tag raiz é a primeira tag do nosso html
+
+verificar a linguagem do nosso documento e o navegar nao vai ficar confuso. assim ele vai entender que tudo sera escrito em portugues do brasil
+
+as tag chamamos de elementos html, chamamos de pai e filho. children
+
+tags head - contem instruçoes para o proprio html. para a pagina entender as cosias, pro navegador entender as coias
+
+body - é o corpo. onde terao as coisas visuais para o nosso cliente
+
+cada parte do nosso browser pode ser formatado pelos elementos html e css
+
+titulo, corpo, espaçamento, cores de texto, fontes, alinhamento
+
+tag meta se refere a tudo que se trata do documento
+
+charset char é de character e set de ajuste
+
+viewport é toda a area que o nosso cliente consegue visualizar. a largura é a largura do device. 
+
+width=device-width
+
+a estrutura base e basica é o que vamos utilizar para praticamente todos os nosso projetos e paginas.
+
+ESSE É A ESTRUTURA INICIAL DO NOSSO PROJETO HTML
+
+----------------------------------
+    3. Analisar todos os elementos html que vamos precisar ter
+        3.1 - selecione todos os elementos que vai ser necessário criar. se for possível ir já organizando de forma hierarquica, muito melhor, pois isso será importante para nossa identacao e arquitetura da nossa pagina
+
+No projeto que vamos utilizar para o exercicio já esta separado dentro do figma
+
+há 3 containers
+
+- um elemento que vai receber as bolinhas
+- um grande elemento chamado hero, 
+    que vai receber uma imagem e
+    vai receber um elemento com dois elementos de texto
+- um elemento que vai receber
+    uma linha
+    dois links
+
+    4. Depois de identificar todos os elementos e criar a hierarquizaçao da nossa arquitetura de construcao, agora vamos comecar a criar os containers no nosso html
+
+    dentro da tag body vamos criar o primeiro container com a tag img, de imagem
+        a tag img comeca e termina nela mesma, entao é preciso colocar um elemento source, ou seja, a fonte de onde esta imagem está alojada. esse é o local onde esta armazenado o arquivo da imagem. 
+    5. vamos percebendo que, neste caso, é melhor para o processo de construçao da nossa pagina, fazer o download de todos os elementos graficos do nosso projeto e adicinar cada um no seu respectivo local de armazenamento. assim vamos conseguir criar o seu endereço para acrescentar nas tags img do projeto
+
+    6. Nesta fase já é para termos os seguintes ingredientes:
+        - design do nosso projeto pronto, feito por um design 
+        - pastas e diretorios do nosso projeto
+        - elenco de elementos que vamos construir
+        - arquivos do nosso projeto
+        - hierarquizaçao dos elementos em ordem "pais e filhos"
+        - download das imagens
+        - codigo das fontes (letras)
+        - codigo das cores
+        - espaçamentos e alinhamentos
+        - posicionamento dos elementos
+        - alt - descriçao para mensagem alternativa para as imagens. alteranativa de acessibilidade
+
+    7. Lembrar que o html cria apenas as coias uma abaixo das outras em linhas e colunas. Sera o CSS quem vai construir o estilo da nossa página. 
+
+tag div serve para agrupar elementos quanto nao há uma tag especifica para isso. ela forma um container
+as vezes os projetos não vao estar agrupadinhos, certinho... vamos usar a taf div para criar um container
+
+usamos a tag h + um numeral até 6 para indiciar parágrafos específicos, como títulos
+
+observaçao desse projeto
+    quando eu vejo o design do projeto eu já observo que há um elemento onde eu posso acrescer uma borda nele. e eu posso fazer isso através do CSS. Então eu deixo esse elemento para o momento do CSS
+
+
+No html, quando a gente vai montando as coisas, sempre vai ficando um encima da outra. montamos assim e depois vamos arrumando. lembrando que o estilo sempre vamos utilizar o CSS
+
+temos 2 tipos de posicionamento para cada elemento. cada tag tem uma categoria de elemento
+elementos h, p, div, etc... tem como categoria uma linha
+já a tag "a", por exemplo, eles sao da categoria in line, fazendo com que o elemento fique ao lado, ou seja a largura deste elemento é a largua do texto dele mesmo
+
+Como fazer marcações no nosso html para preparar o arquivo para ter o estilo formatado pelo nosso CSS. usando a tag "span" ou as identidades, ou as classes. 
+    Lembrando que não é legal usar a tag id de forma muito repetida, quando for necessário a repetição usar a tag class
+
+vamos utilizar a tag span para marcar algumas partes do meu texto que vão ser estilizados pelo meu css futuramente
+
+7. Adicionar fontes especiais ao nosso projeto
+avaliar as diversas fontes que o projeto ja traz
+a. vamos identificar qual a fonte nosso designer utilizou no projeto, através do nome da fonta.
+b. Clicando no link vamos encontrar o nome da fonte o tamanho da fonte e outros detalhes
+c. verificar se as fontes estao disponiveis no google fontes 
+
+para o nosso projeto em questao sao as fontes inter e open sans
+
+acesse o link do fonts.google.com e faça a busca pelo nome das fontes necessárias. 
+Lembre-se de selecionar os estilos - regular, bold, tinny, etc... 
+
+a tag link vai fazer uma referência a um CSS externo. O google construiu um CSS so de fonts
+é atraves do CSS que vamos alterar as fonts
+
+quando estamos fazendo um projeto pequeno, podemos colocar o CSS todo no head
+criado um arquivo de estilo CSS, podemos começar a codar o arquivo CSS
+
+Famos fazer uma varredura para encontrar as tags que vão servir de ancoragem para a estilização do nosso projeto
+
+a primeira coisa a fazer no CSS quando se trata de estilizaão de fonts é voltar no google fonts e verificar o protocolo das fonts que selecionamos para colocar na head e copiar o codigo
+
+Estlos de fontes aplicadas agora vamos aplicar as cores na nossa página
+
+quando procuramos as cores no figma, encontramos as cores em um formato hexadecial com 3 pares de caracteres
+00 00 00 - 
+RR GG BB - red green blue 
+
+tudo zero é preto
+tudo F é branco
+
+Antes de colocar o estilo de cores eu preciso encontrar onde é para aplicar cada cor do nosso projeto e verificar qual a tag foi feita ancoragem
+
+Uma coisa importante que também devemos ter atenção é o tamanho da font
+é no CSS que aplicamos o estilo de tamanho das fontes
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 49px;
+    line-height: 56px;
+    font-weight: normal;
+
+h1 span {
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}    
+
+span, a {
+    color: #FF9900;
+}
+
+p {
+    color: #7D7987;
+}
+
+agora vamos ver o espaçamento e alinhamento
+
+tudo o que tem no body podemos alinhar no meio
+
+no CSS, gosto de deixar organizado no formato da aparição dos elementos no html
+
+body
+hero
+h1
+span
+p
+
+colocar a tag text-aling para escolher o estilo de alinhamento vamos utilizar para cada bloco ou tag
+por exemplo, na tag body utilizamos o text-align: center para deixar tudo centralizado. e podemos verificar que ele acabou por deixar tudo centralizado pois pela tag body ele acaba aplicando em tudo. 
+por isso é importante a hierarquização das tags na hora de estilizar com o CSS e não ficar confuso. 
+    Todo codigo deve ser escrito de uma forma que qualquer DEV consiga encontrar facilmente erros, bugs e corrigir com agilidade e precisao
+
+para referencia um tag id eu uso a hashtag # seguida da nomenclatura do id. 
+neste exemplo ficaria assim #hero
+
+aplicando margens com CSS
+
+quando utilizamos a tag margin ele sempr vai ler dessa forma
+primeiro valor para cima
+segundo valor para a direita
+terceiro valor para baixo
+quarto valor para esquerda
+
+corrigindo problema de concepção do design do projeto
+utilizar a regua de medidas para encontrar o valor de espaçamento entre os elementos e usar para adicionar com o CSS
+
+instrução do a + a é dizer para o nosso CSS fazer o seguinte para aplicar
+pegue o a que tem um a anterior... ele vai fazer isso com todos os a's até chegar naquele a que não tem
+
+agora vamos introduzir uma linha usando o CSS
+
+
+
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Móveis Customizados</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="hero">
+        <img src="images/img1.jpg" 
+        alt="Desenho de uma pessoa venstindo uma camiseta amarela e calça azul, em uma sala com móveis customizados">
+
+       <h1>Ambientes <span>únicos</span> para você</h1>
+        <p>
+            Nós criamos ambientes <strong>exclusívos</strong> e <strong>únicos</strong>, com muito bom gosto e profissionalismo, investimos tempo e <span>dedicação no seu projeto</span>.
+       
+            <br/>
+            <br/>
+
+            Tenha <span>ambientes limpos</span> e bem decorados, <strong>transmitindo elegância e finesse</strong> para todo aquele que estiver ali.
+        </p>
+    </div>
+
+    <div class="footer">
+        
+        <div class="line"></div>
+        
+        <a 
+        target="_blank"
+        href="https://instagram.com/moveisparavoce.com">
+        instagram
+        </a>
+
+        <a 
+        target="_blank"
+        href="mailto:moveisparavoce@moveisparavoce.com.br">
+        Fale Conosco
+        </a>
+    </div>
+   
+    <img 
+    class="balls"
+    src="images/balls.svg" 
+    alt="bolinhas alaranjadas no canto inferior direito da tela">
+
+
+
+</body>
+</html>
